@@ -15,13 +15,17 @@
      grid-template-rows: 220px 1fr 40px; 
      height: 100vh;
      font-family: 'Ubuntu', sans-serif;
-
+    color: #fff;
 }
 
 img {
     cursor: pointer;
 }
 
+p {
+    line-height: 2.2ch;
+    
+}
 h1, h2 , h3 {
     cursor: pointer;
 }
@@ -77,6 +81,7 @@ input[type="search"]:focus {
 .upper-header .pp img {
     /* width: 80px; */
     border-radius: 50% ;
+    
 }
 
 .lower-header {
@@ -93,6 +98,8 @@ input[type="search"]:focus {
 .lower-header img {
     width: 90px;
     border-radius: 50%;
+    box-shadow: 1px 1px 10px white;
+
 }
 .lower-header div {
     display: flex;
@@ -139,6 +146,7 @@ input[type="search"]:focus {
     background-color: rgb(36, 112, 226);
     transform: scale(1.1);
     transition: 200ms;
+    cursor: pointer;
 }
 
 .lower-header .header.buttons button:active {
@@ -155,7 +163,7 @@ input[type="search"]:focus {
     justify-self: center;
     padding: 1rem;
     background-color: rgb(23, 99, 134);
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     color: white;
 }
 .sidebar h1 {
@@ -193,8 +201,8 @@ main{
     grid-template-columns: repeat(3,1fr);  
     grid-template-rows: repeat(3,1fr); 
     gap: 2rem;                      
-
-background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rgb(131, 131, 131) 99%);
+    background-color: rgb(88, 88, 88);
+/* background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rgb(131, 131, 131) 99%); */
     
 }
 
@@ -239,7 +247,8 @@ background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rg
     grid-template-rows: 2rem
                         1fr
                         2rem;
-                        gap: 1rem;
+     gap: 1rem;
+     box-shadow: 2px 2px 20px white;
 }
 
 
@@ -302,6 +311,8 @@ background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rg
     width: 70%;
     padding-top: 20px;
     border-radius: 20px;
+    box-shadow: 2px 2px 20px white;
+
 }
 
 .notifications > div {
@@ -339,6 +350,8 @@ background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rg
     padding-top: 20px;
     border-radius: 20px;
     margin-bottom: 1.5rem;
+    box-shadow: 2px 2px 20px white;
+
 
 }
 
@@ -374,4 +387,6 @@ footer {
     align-items: center;
     font-size: 1.5rem;
     background-color: rgb(189, 186, 184);
+    color: black;
+    font-weight: bold;
 }
