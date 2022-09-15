@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
      grid-template-columns: 1fr 5fr;
      grid-template-rows: 220px 1fr 40px; 
      height: 100vh;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: 'Roboto','Ubuntu', sans-serif;
     color: #fff;
 }
 
@@ -74,7 +74,7 @@ input[type="search"] {
 }
 
 input[type="search"]:focus {
-    outline: 2px solid white;
+    outline: 4px solid black;
     transform: scale(1.01);
 }
 
@@ -201,7 +201,8 @@ main{
     grid-template-columns: repeat(3,1fr);  
     grid-template-rows: repeat(3,1fr); 
     gap: 2rem;                      
-    background-color: rgb(88, 88, 88);
+    background-color: rgb(148, 148, 148);
+    background-color: #000;
 /* background: linear-gradient(0deg, rgba(52,52,52,1) 27%, rgba(83,83,83,1) 67%, rgb(131, 131, 131) 99%); */
     
 }
@@ -231,14 +232,11 @@ main{
 .main-container .card {
     width: 400px;
     height: 15rem;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(34, 34, 34, 0.884);
     color: white;
     padding: 2rem;
     border-left: 10px solid gold;
     border-radius: 10%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 10px; */
     display: grid;
     grid-template-areas: "card-heading card-heading"
                          "card-para card-para"
@@ -249,6 +247,11 @@ main{
                         2rem;
      gap: 1rem;
      box-shadow: 2px 2px 20px white;
+}
+
+.main-container .card:hover {
+    transform: scale(1.1);
+    transition: 300ms;
 }
 
 
@@ -306,7 +309,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(34, 34, 34, 0.767);
+
     color: #fff;
     width: 70%;
     padding-top: 20px;
@@ -318,11 +322,22 @@ main{
 .notifications > div {
     margin-bottom:1rem ;
     width: 250px;
+    padding-bottom: 20px;
+    border-bottom: 1px black solid;
+}
+
+.notifications div:nth-child(3) {
+    border: none;
 }
 
 .notifications > div > h2{
     margin-bottom: 1rem;
     font-size: 1.3rem;
+}
+
+.notifications > div > h2:hover {
+    transform: scale(1.03);
+    transition: 400ms;
 }
 
 .notifications > div p{
@@ -343,7 +358,9 @@ main{
     flex-direction: column;
     align-items: center;
     grid-area: trending;
-    background-color: rgba(0, 0, 0, 0.884);
+    justify-content: center;
+    background-color: rgba(34, 34, 34, 0.767);
+
     color: #fff;
     letter-spacing: 1px;
     width: 70%;
@@ -358,7 +375,7 @@ main{
 .trending > div {
     display: flex;
     margin-bottom: 1rem ;
-    width: 250px;
+    width: 280px;
     align-items: center;
     gap: 20px;
 }
@@ -366,6 +383,11 @@ main{
 .trending > div >  div > h3 {
 
     margin-bottom: 5px;
+}
+
+.trending > div >  div > h3:hover {
+    transform: scale(1.03);
+    transition: 400ms;
 }
 
 .trending > div > div > p {
