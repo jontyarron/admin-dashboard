@@ -163,7 +163,7 @@ input[type="search"]:focus {
     justify-self: center;
     padding: 1rem;
     background-color: rgb(23, 99, 134);
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(0, 0, 0);
     color: white;
 }
 .sidebar h1 {
